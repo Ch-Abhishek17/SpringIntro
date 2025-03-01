@@ -1,13 +1,25 @@
-package com.example.Test;
+package com. example.Test.model;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+public class User {
+	private String firstName;
+	private String lastName;
 
-@SpringBootApplication
-public class TestApplication {
+	public String getFirstName() {
+		return firstName;
 
-	public static void main(String[] args) {
-		SpringApplication.run(TestApplication.class, args);
 	}
 
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName () {
+		return lastName;
+
+	}
+
+	public void setLastName (String lastName){
+		this.lastName = lastName;
+
+	}
 }
