@@ -8,9 +8,17 @@ import com.example.Test.model.User;
 @RequestMapping("/hello")
 public class HelloRestController {
 
+
+    // curl localhost:8080/hello -w "\n"
+    //uc1
     @GetMapping(value = {"", "/", "/home"})
     public String sayHello() {
         return "Hello From BridgeLabz! ! !";
 
+    }
+
+    @GetMapping("/query")
+    public String sayHello(@RequestParam String name){
+        return "Hello " + name+" from Bridgelabcz";
     }
 }
